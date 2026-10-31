@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Link - Your Trusted Partner in Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#F97316',
+                        dark: '#0F172A',
+                        'dark-gray': '#374151',
+                        'light-blue': '#EFF6FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-dark text-white py-2 text-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span><i class="fas fa-percentage text-secondary mr-2"></i>Get a discount of up to 50% for use our service this month!</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Newyork, 33069</span>
+                <span><i class="fas fa-envelope mr-2"></i>support@carelink.com</span>
+                <span><i class="fas fa-phone mr-2"></i>+162 864 6444 2222</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-dark text-white py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-heartbeat text-primary text-2xl"></i>
+                    <span class="text-xl font-bold">CARE LINK</span>
+                </div>
+                
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#" class="hover:text-primary transition">Home</a>
+                    <a href="#" class="hover:text-primary transition">About Us</a>
+                    <a href="#" class="hover:text-primary transition">Services</a>
+                    <a href="#" class="hover:text-primary transition">Our Locations</a>
+                    <a href="#" class="hover:text-primary transition">Contact</a>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 hover:text-primary transition">
+                            Pages <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white text-dark rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="#" class="block px-4 py-2 hover:bg-light-blue transition">Testimonials</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-light-blue transition">Pricing</a>
+                            <a href="#" class="block px-4 py-2 bg-primary text-white">Teams</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-light-blue transition">FAQ</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-light-blue transition">404</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-light-blue transition">Coming Soon</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-light-blue transition">Popup Banner</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:block">
+                        <p class="text-xs text-gray-400">Open Hours</p>
+                        <p class="text-sm">Monday-Saturday 9AM - 6PM</p>
+                    </div>
+                    <button class="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-dark transition">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-800 py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920" alt="Hospital" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <p class="text-secondary font-semibold mb-4"><i class="fas fa-plus mr-2"></i>WELCOME TO CARE LINK</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">We Are Here To Hear And Heal Your Health Problems</h1>
+                <p class="text-xl text-white mb-4">CareLink - Your Trusted Partner in Healthcare</p>
+                <p class="text-gray-300 mb-8">Comprehensive medical care with expert doctors, advanced technology, and compassionate service. Your health, our priority.</p>
+                <div class="flex gap-4">
+                    <button class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Get Started</button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-dark transition">Contact Us</button>
+                </div>
+            </div>
+            
+            <div class="mt-12 flex gap-4">
+                <div class="bg-dark-gray bg-opacity-80 backdrop-blur px-8 py-6 rounded-lg text-center min-w-[200px]">
+                    <p class="text-3xl font-bold text-white">25+</p>
+                    <p class="text-gray-300 text-sm">Years of Experience</p>
+                </div>
+                <div class="bg-dark-gray bg-opacity-80 backdrop-blur px-8 py-6 rounded-lg text-center min-w-[200px]">
+                    <p class="text-3xl font-bold text-white">140+</p>
+                    <p class="text-gray-300 text-sm">Specialist Doctors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Cards -->
+    <section class="py-12 bg-white -mt-8 relative z-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-light-blue p-6 rounded-xl flex items-start gap-4 hover:shadow-lg transition">
+                    <div class="bg-white p-3 rounded-full">
+                        <i class="fas fa-user-md text-primary text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-dark mb-2">Expert Doctors</h3>
+                        <p class="text-gray-600 text-sm">Skilled professionals delivering top-quality care.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-primary p-6 rounded-xl flex items-start gap-4 hover:shadow-lg transition text-white">
+                    <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                        <i class="fas fa-ambulance text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Emergency Care</h3>
+                        <p class="text-blue-100 text-sm">Fast, reliable treatment when you need it most.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-light-blue p-6 rounded-xl flex items-start gap-4 hover:shadow-lg transition">
+                    <div class="bg-white p-3 rounded-full">
+                        <i class="fas fa-headset text-primary text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-dark mb-2">24/7 Full Support</h3>
+                        <p class="text-gray-600 text-sm">Always here for appointments and emergencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600" alt="Doctor" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                        <div class="mt-8">
+                            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600" alt="Medical Team" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                        </div>
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <button class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
+                            <i class="fas fa-play text-xl ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="text-primary font-semibold mb-2"><i class="fas fa-plus mr-2"></i>ABOUT US</p>
+                    <h2 class="text-3xl font-bold text-dark mb-4">CareLink Create A Safe, Your Health Our Priority</h2>
+                    <p class="text-gray-600 mb-8">CareLink provides top-quality healthcare with experienced doctors, emergency services, and round-the-clock support. Your trusted partner for a healthier life.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex gap-4">
+                            <div class="bg-light-blue p-3 rounded-full h-fit">
+                                <i class="fas fa-eye text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Our Vision</h4>
+                                <p class="text-gray-600 text-sm mt-1">To be a trusted leader in quality, accessible, and compassionate healthcare.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-light-blue p-3 rounded-full h-fit">
+                                <i class="fas fa-home text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Our Vision</h4>
+                                <p class="text-gray-600 text-sm mt-1">CareLink delivers expert, patient-focused care with 24/7, advanced technology, and a focus on wellness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section class="py-16 bg-dark-gray text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mb-12">
+                <p class="text-secondary font-semibold mb-2"><i class="fas fa-plus mr-2"></i>OUR COMMITMENT</p>
+                <h2 class="text-3xl font-bold mb-4">Dedicated To Excellence In Healthcare Through Trusted Partnerships</h2>
+                <p class="text-gray-300">We are committed to providing exceptional care by working with leading healthcare professionals, technology providers, and trusted partners.</p>
+            </div>
+            
+            <div class="flex flex-wrap gap-8 items-center opacity-70">
+                <div class="flex items-center gap-2 text-2xl font-bold">
+                    <i class="fas fa-heartbeat"></i> logo
+                </div>
+                <div class="flex items-center gap-2 text-2xl font-bold">
+                    <i class="fas fa-globe"></i> logo- ipsum
+                </div>
+                <div class="flex items-center gap-2 text-2xl font-bold">
+                    <i class="fas fa-circle"></i> logoIpsum
+                </div>
+                <div class="flex items-center gap-2 text-xl font-bold">
+                    <i class="fas fa-cube"></i> POWER MODULE
+                </div>
+                <div class="text-2xl font-bold italic">logoipsum</div>
+                <div class="flex items-center gap-2 text-xl font-bold">
+                    <i class="fas fa-cog"></i> LogoIpsum
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-light-blue">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-primary font-semibold mb-2"><i class="fas fa-plus mr-2"></i>OUR SERVICES</p>
+                <h2 class="text-3xl font-bold text-dark mb-4">Comprehensive Healthcare Solutions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">At CareLink, we offer a wide range of medical services tailored to your needs, from routine check-ups to specialized treatments.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition group">
+                    <div class="bg-light-blue w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-pills text-primary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="font-bold text-dark text-xl mb-3">Pharmacy Service</h3>
+                    <p class="text-gray-600 text-sm">Convenient access to prescription medications & expert pharmaceutical advice, all in one place.</p>
+                </div>
+                
+                <div class="bg-primary p-8 rounded-2xl hover:shadow-xl transition text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-md text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Medical Specialist</h3>
+                    <p class="text-blue-100 text-sm">Consult experienced specialists for accurate diagnoses & personalized treatment plans.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition group">
+                    <div class="bg-light-blue w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-stethoscope text-primary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="font-bold text-dark text-xl mb-3">Medical Checkup</h3>
+                    <p class="text-gray-600 text-sm">Regular health checkups to monitor your well-being and detect potential issues early.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition group">
+                    <div class="bg-light-blue w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-comments text-primary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="font-bold text-dark text-xl mb-3">Health Consultation</h3>
+                    <p class="text-gray-600 text-sm">Professional guidance on maintaining a healthy lifestyle, managing chronic conditions, and more.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition group">
+                    <div class="bg-light-blue w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-shield-alt text-primary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="font-bold text-dark text-xl mb-3">Health Assurance</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive health insurance plans offering financial protection for medical treatments.</p>
+                </div>
+                
+                <div class="bg-dark-gray p-8 rounded-2xl hover:shadow-xl transition text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Emergency Call</h3>
+                    <p class="text-gray-300 text-sm mb-4">Quick access to emergency services, ensuring immediate care when you need it the most.</p>
+                    <button class="border border-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-dark transition">Contact Us <i class="fas fa-arrow-right ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-primary font-semibold mb-2"><i class="fas fa-plus mr-2"></i>OUR DOCTORS</p>
+                <h2 class="text-3xl font-bold text-dark mb-4">Meet Our Specialist Doctors</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our team of specialist doctors is dedicated to providing expert care across a wide range of medical fields.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400" alt="Dr. John Smith" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-dark text-lg">Dr. John Smith</h3>
+                    <p class="text-gray-600 text-sm">Cardiologist</p>
+                </div>
+                
+                <div class="group">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400" alt="Dr. Sarah Johnson" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-dark text-lg">Dr. Sarah Johnson</h3>
+                    <p class="text-gray-600 text-sm">Orthopedic Surgeon</p>
+                </div>
+                
+                <div class="group">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400" alt="Dr. Michael Lee" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-dark text-lg">Dr. Michael Lee</h3>
+                    <p class="text-gray-600 text-sm">Pediatrician</p>
+                </div>
+                
+                <div class="group">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400" alt="Dr. Emily Davis" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-dark text-lg">Dr. Emily Davis</h3>
+                    <p class="text-gray-600 text-sm">Gynecologist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <p class="text-primary font-semibold mb-2"><i class="fas fa-plus mr-2"></i>HOW IT WORKS</p>
+                    <h2 class="text-3xl font-bold text-dark mb-4">Trusted Healthcare With A Focus On Your Well-Being</h2>
+                    <p class="text-gray-600">At CareLink, we've streamlined the healthcare process to ensure you receive the best care with ease and convenience.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-light-blue p-6 rounded-2xl">
+                        <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">01</div>
+                        <h3 class="font-bold text-dark text-lg mb-2">Book An Appointment</h3>
+                        <p class="text-gray-600 text-sm">Schedule your visit through our easy-to-use online platform or by calling our friendly support team. Choose the time that works best for you.</p>
+                    </div>
+                    
+                    <div class="bg-light-blue p-6 rounded-2xl">
+                        <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">02</div>
+                        <h3 class="font-bold text-dark text-lg mb-2">Consult Our Experts</h3>
+                        <p class="text-gray-600 text-sm">Meet with our highly skilled doctors and medical specialists who will listen to your concerns, provide an accurate diagnosis, and recommend the effective treatment options.</p>
+                    </div>
+                    
+                    <div class="bg-light-blue p-6 rounded-2xl">
+                        <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">01</div>
+                        <h3 class="font-bold text-dark text-lg mb-2">Receive Care</h3>
+                        <p class="text-gray-600 text-sm">Once a treatment plan is established, our team ensures you receive the necessary medical services, whether it's a prescription from our pharmacy, specialized care.</p>
+                    </div>
+                    
+                    <div class="bg-light-blue p-6 rounded-2xl">
+                        <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">01</div>
+                        <h3 class="font-bold text-dark text-lg mb-2">Follow-Up</h3>
+                        <p class="text-gray-600 text-sm">After your treatment, we stay connected for follow-up consultations, ensuring your recovery is progressing smoothly and addressing any further questions you may have.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-secondary font-semibold mb-2"><i class="fas fa-star mr-2"></i>PATIENT TESTIMONIALS</p>
+                <h2 class="text-3xl font-bold mb-4">Hear From Those Who Trust Care Link</h2>
+                <p class="text-blue-100 max-w-2xl mx-auto">Our patients' experiences speak volumes. Read how CareLink has provided compassionate, expert care and made a difference in their lives.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 backdrop-blur p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Samantha" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Samantha Elizabeth</h4>
+                            <p class="text-blue-200 text-sm">New York, NY</p>
+                        </div>
+                        <i class="fas fa-quote-right text-secondary text-2xl ml-auto"></i>
+                    </div>
+                    <p class="text-blue-100 text-sm mb-4">I had an excellent experience at CareLink during a recent emergency. The team was incredibly supportive and attentive, and I received prompt treatment. I truly felt cared for and reassured throughout the entire process.</p>
+                    <div class="flex gap-1 text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Olivia" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Olivia Marie</h4>
+                            <p class="text-blue-200 text-sm">Los Angeles, CA</p>
+                        </div>
+                        <i class="fas fa-quote-right text-secondary text-2xl ml-auto"></i>
+                    </div>
+                    <p class="text-blue-100 text-sm mb-4">CareLink has been my go-to for health consultations, and I am always impressed by the professionalism and genuine care from the doctors. They take the time to listen and explain things, making every visit feel personal.</p>
+                    <div class="flex gap-1 text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100" alt="Jessica" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Jessica Claire</h4>
+                            <p class="text-blue-200 text-sm">Chicago, IL</p>
+                        </div>
+                        <i class="fas fa-quote-right text-secondary text-2xl ml-auto"></i>
+                    </div>
+                    <p class="text-blue-100 text-sm mb-4">The specialists at CareLink provided me with the guidance I needed to manage my health condition. Their expertise and timely support made a huge difference in my recovery, and I'm grateful for the comprehensive care I received.</p>
+                    <div class="flex gap-1 text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-primary font-semibold mb-2"><i class="fas fa-plus mr-2"></i>BLOG & NEWS</p>
+                <h2 class="text-3xl font-bold text-dark mb-4">Stay Informed With The Latest In</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our Blog & News section keeps you updated with the latest health tips, medical breakthroughs, clinic news, and wellness advice.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 relative group">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800" alt="Health Checkup" class="w-full h-96 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-2xl"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <p class="text-sm mb-2">JANUARY 15, 2025 • 0 COMMENTS • NEWS</p>
+                        <h3 class="text-2xl font-bold mb-4">Understanding The Importance Of Regular Health Checkups</h3>
+                        <button class="bg-secondary text-white px-6 py-2 rounded-full text-sm hover:bg-orange-600 transition">Read More</button>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="group">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400" alt="Stress Management" class="w-full h-48 object-cover rounded-2xl mb-4 group-hover:opacity-90 transition">
+                        <h3 class="font-bold text-dark mb-2 group-hover:text-primary transition">How to Manage Stress and Improve Mental Well-being</h3>
+                        <p class="text-gray-600 text-sm">Tuesday - January 24, 2025</p>
+                    </div>
+                    
+                    <div class="group">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400" alt="Emergency Care" class="w-full h-48 object-cover rounded-2xl mb-4 group-hover:opacity-90 transition">
+                        <h3 class="font-bold text-dark mb-2 group-hover:text-primary transition">New Advances in Emergency Care: What You Need to Know</h3>
+                        <p class="text-gray-600 text-sm">Tuesday - January 24, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-dark mb-4">Subscribe To Our Newsletter For Health Tips And Updates</h2>
+                <p class="text-gray-600 mb-8">Subscribe to CareLink's newsletter and stay up to date on our services, medical advice, and more!</p>
+                
+                <div class="flex max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-3 rounded-l-full border border-gray-300 focus:outline-none focus:border-primary">
+                    <button class="bg-primary text-white px-8 py-3 rounded-r-full font-semibold hover:bg-blue-700 transition">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-12 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fas fa-heartbeat text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">CARE LINK</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Your Health, Our Priority Anytime, Anywhere</h3>
+                    <p class="text-gray-400 mb-6">Reach out to us for all your healthcare needs.</p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-primary text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-blue-700 transition">
+                            <i class="fas fa-phone"></i> Contact Us
+                        </button>
+                        <button class="bg-primary text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-blue-700 transition">
+                            <i class="fas fa-envelope"></i> Email Us
+                        </button>
+                        <button class="bg-primary text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-blue-700 transition">
+                            <i class="fas fa-phone-alt"></i> (310) 123-44567
+                        </button>
+                        <button class="bg-primary text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-blue-700 transition">
+                            <i class="fas fa-map-marker-alt"></i> Location on map
+                        </button>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-secondary font-bold mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Mission & Vision</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Legal Notice</a></li>
+                        <li><a href="#" class="hover:text-white transition">Global Network</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-secondary font-bold mb-6">Services</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Pharmacy Services</a></li>
+                        <li><a href="#" class="hover:text-white transition">Medical Specialties</a></li>
+                        <li><a href="#" class="hover:text-white transition">Health Checkups</a></li>
+                        <li><a href="#" class="hover:text-white transition">Health Consultation</a></li>
+                        <li><a href="#" class="hover:text-white transition">Emergency Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-dark-gray flex items-center justify-center hover:bg-primary transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-dark-gray flex items-center justify-center hover:bg-primary transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-dark-gray flex items-center justify-center hover:bg-primary transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-dark-gray flex items-center justify-center hover:bg-primary transition"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms & Condition</a>
+                    <a href="#" class="hover:text-white transition">Do not share or sell my information</a>
+                </div>
+                
+                <p class="text-sm text-gray-400">2025 © Care Link. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
